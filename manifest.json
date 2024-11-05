@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "UIB Auto solve survey",
+  "description": "Bagi kaum yang males ngisi survey UIB",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://kuesioner.uib.ac.id/*"],
+      "js": ["src/main.js"]
+    }
+  ]
+}
